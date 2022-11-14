@@ -7,7 +7,8 @@ parent.append(newDiv);
 parent.append(list);
 
 newDiv.on("click", () => {
-    let listDisplay = $(`<div>${textInput.val()}</div>`);
-    list.append(listDisplay);   
+    let listDisplay = $(`<li>${textInput.val()}</li>`);
+    list.append(listDisplay);
+    textInput.val("")   
 });
 
